@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/reserva_navigation.xml"
+    app:startDestination="@id/searchFragment">
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.luna.vuelav.reserva.SearchFragment"
+        android:label="SearchFragment"
+        tools:layout="@layout/fragment_search">
+        <action
+            android:id="@+id/action_searchFragment_to_reservaFragment"
+            app:destination="@id/reservaFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/reservaFragment"
+        android:name="com.luna.vuelav.reserva.ReservaFragment"
+        android:label="fragment_reserva"
+        tools:layout="@layout/fragment_reserva" >
+        <action
+            android:id="@+id/action_reservaFragment_to_maletaFragment"
+            app:destination="@id/maletaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/maletaFragment"
+        android:name="com.luna.vuelav.reserva.MaletaFragment"
+        android:label="fragment_maleta"
+        tools:layout="@layout/fragment_maleta" />
+
+</navigation>

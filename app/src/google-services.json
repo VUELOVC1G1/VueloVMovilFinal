@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "513273402911",
+    "project_id": "vuelavnotifications",
+    "storage_bucket": "vuelavnotifications.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:513273402911:android:d28d6aab16758590a3672a",
+        "android_client_info": {
+          "package_name": "com.luna.notificationstest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "513273402911-ggvevi1p12mjv1osj46190lh4hsqefmk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRKeKnvkPlfloB0oZnZShlExAkTC5oWlE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "513273402911-ggvevi1p12mjv1osj46190lh4hsqefmk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
