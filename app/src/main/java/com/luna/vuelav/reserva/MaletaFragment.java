@@ -52,6 +52,7 @@ public class MaletaFragment extends Fragment {
     private double peso;
     private double total;
     private long pasajeroId;
+    private boolean existsPasajero;
 
     private final double precioKiloMaleta = .5;
 
@@ -98,8 +99,11 @@ public class MaletaFragment extends Fragment {
                     public void onResponse(Call<Pasajero> call, Response<Pasajero> response) {
                         if (response.isSuccessful()) {
                             pasajeroId = response.body().getId();
-                        } else
-                            Toast.makeText(getContext(), "Error al obtener pasajero", Toast.LENGTH_SHORT).show();
+                            existsPasajero = true;
+                        } else {
+                            Toast.makeText(getContext(), "Debes iniciar sesión para continuar", Toast.LENGTH_LONG).show();
+                            binding.buttonPay.setEnabled(false);
+                        }
                     }
 
                     @Override
