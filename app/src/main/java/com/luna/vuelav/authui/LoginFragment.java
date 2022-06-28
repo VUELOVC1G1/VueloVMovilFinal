@@ -154,9 +154,9 @@ public class LoginFragment extends Fragment {
         Snackbar snackbar = Snackbar.make(requireView(), text, Snackbar.LENGTH_LONG);
         snackbar.show();
         if (finish) new Handler().postDelayed(() -> {
-            requireActivity().finish();
             Intent intent = new Intent(getContext(), MainActivity.class);
             startActivity(intent);
+            requireActivity().finish();
         }, 500);
     }
 
